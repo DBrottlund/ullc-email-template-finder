@@ -36,6 +36,8 @@ add_action('plugins_loaded', 'ullc_etf_load_textdomain', 5);
 require_once ULLC_ETF_PLUGIN_DIR . 'includes/class-ullc-etf-activator.php';
 require_once ULLC_ETF_PLUGIN_DIR . 'includes/class-ullc-etf-deactivator.php';
 require_once ULLC_ETF_PLUGIN_DIR . 'includes/class-ullc-etf-loader.php';
+require_once ULLC_ETF_PLUGIN_DIR . 'includes/class-ullc-etf-scanner.php';
+require_once ULLC_ETF_PLUGIN_DIR . 'admin/class-ullc-etf-admin-display.php';
 
 // Activation and deactivation hooks
 register_activation_hook(__FILE__, array('ULLC_ETF_Activator', 'activate'));
@@ -46,5 +48,11 @@ add_action('plugins_loaded', 'ullc_etf_init', 10);
 
 function ullc_etf_init() {
     $loader = new ULLC_ETF_Loader();
+    
+    // Initialize admin display if in admin area
+    if (is_admin()) {
+        new ULLC_ETF_Admin_Display();
+    }
+    
     $loader->run();
 }
