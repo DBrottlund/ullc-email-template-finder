@@ -1,0 +1,72 @@
+# Copyright (C) 2024 ULLC
+# This file is distributed under the same license as the ULLC Email Template Finder plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: ULLC Email Template Finder 0.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ullc-email-template-finder\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-12-30T18:00:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: ullc-email-template-finder\n"
+
+#. Plugin Name of the plugin
+msgid "ULLC Email Template Finder"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://github.com/DBrottlund/ullc-email-template-finder"
+msgstr ""
+
+#. Description of the plugin
+msgid "Scans and discovers all email templates and their triggers in a WordPress/WooCommerce installation"
+msgstr ""
+
+#. Author of the plugin
+msgid "ULLC"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://github.com/DBrottlund"
+msgstr ""
+
+#: includes/class-ullc-etf-loader.php:31
+#: includes/class-ullc-etf-loader.php:32
+msgid "Email Template Finder"
+msgstr ""
+
+#: includes/class-ullc-etf-loader.php:33
+msgid "Email Templates"
+msgstr ""
+
+#: includes/class-ullc-etf-loader.php:68
+msgid "Scanning..."
+msgstr ""
+
+#: includes/class-ullc-etf-loader.php:70
+msgid "Scan failed. Please try again."
+msgstr ""
+
+#: includes/class-ullc-etf-loader.php:71
+msgid "No email templates found."
+msgstr ""
+
+#: includes/class-ullc-etf-loader.php:72
+msgid "Permission denied."
+msgstr ""
+
+#: includes/class-ullc-etf-loader.php:81
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: includes/class-ullc-etf-loader.php:89
+msgid "Scan for Email Templates"
+msgstr ""
+
+#: includes/class-ullc-etf-loader.php:105
+msgid "Security check failed."
+msgstr ""

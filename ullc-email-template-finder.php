@@ -22,6 +22,16 @@ define('ULLC_ETF_VERSION', '0.0.1');
 define('ULLC_ETF_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('ULLC_ETF_PLUGIN_URL', plugin_dir_url(__FILE__));
 
+// Load translations
+function ullc_etf_load_textdomain() {
+    load_plugin_textdomain(
+        'ullc-email-template-finder',
+        false,
+        dirname(plugin_basename(__FILE__)) . '/languages'
+    );
+}
+add_action('plugins_loaded', 'ullc_etf_load_textdomain', 5);
+
 // Include core classes
 require_once ULLC_ETF_PLUGIN_DIR . 'includes/class-ullc-etf-activator.php';
 require_once ULLC_ETF_PLUGIN_DIR . 'includes/class-ullc-etf-deactivator.php';
@@ -32,7 +42,7 @@ register_activation_hook(__FILE__, array('ULLC_ETF_Activator', 'activate'));
 register_deactivation_hook(__FILE__, array('ULLC_ETF_Deactivator', 'deactivate'));
 
 // Initialize the plugin
-add_action('plugins_loaded', 'ullc_etf_init');
+add_action('plugins_loaded', 'ullc_etf_init', 10);
 
 function ullc_etf_init() {
     $loader = new ULLC_ETF_Loader();
