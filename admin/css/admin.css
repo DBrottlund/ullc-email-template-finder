@@ -1,0 +1,121 @@
+.ullc-etf-scan-controls {
+    margin: 20px 0;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    border-radius: 3px;
+}
+
+.ullc-etf-results {
+    margin-top: 20px;
+}
+
+.ullc-etf-results table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+}
+
+.ullc-etf-results th,
+.ullc-etf-results td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ccd0d4;
+}
+
+.ullc-etf-results th {
+    background: #f8f9fa;
+    font-weight: 600;
+}
+
+.ullc-etf-results tr:hover {
+    background-color: #f8f9fa;
+}
+
+.ullc-etf-progress {
+    display: none;
+    margin: 10px 0;
+    padding: 10px;
+    background: #f8f9fa;
+    border: 1px solid #ccd0d4;
+    border-radius: 3px;
+}
+
+.ullc-etf-progress.active {
+    display: block;
+}
+
+.ullc-etf-error {
+    color: #dc3232;
+    padding: 10px;
+    margin: 10px 0;
+    background: #fff;
+    border-left: 4px solid #dc3232;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+
+.ullc-etf-success {
+    color: #46b450;
+    padding: 10px;
+    margin: 10px 0;
+    background: #fff;
+    border-left: 4px solid #46b450;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+
+/* Template type badges */
+.ullc-etf-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.ullc-etf-badge-plugin {
+    background: #007cba;
+    color: #fff;
+}
+
+.ullc-etf-badge-theme {
+    background: #008a20;
+    color: #fff;
+}
+
+.ullc-etf-badge-post {
+    background: #826eb4;
+    color: #fff;
+}
+
+.ullc-etf-badge-settings {
+    background: #d63638;
+    color: #fff;
+}
+
+/* Loading spinner */
+.ullc-etf-spinner {
+    display: none;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.ullc-etf-spinner.active {
+    display: inline-block;
+}
+
+/* File path display */
+.ullc-etf-file-path {
+    font-family: monospace;
+    background: #f6f7f7;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+
+/* Line number columns */
+.ullc-etf-line-number {
+    font-family: monospace;
+    color: #666;
+}
